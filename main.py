@@ -11,7 +11,8 @@ scheduler = AsyncIOScheduler()
 bot = Bot(TOKEN)
 dp = Dispatcher()
 activity_flag = False
-async def subscribe(chat):
+
+async def Subscribe(chat):
     return await bot.send_message(chat, text.sms2, reply_markup=keyboards.sms2)
 async def insta_wait(chat):
     return await bot.send_message(chat, text.sms3)
